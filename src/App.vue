@@ -1,17 +1,19 @@
 <template>
-  <div id="app">
-    <NavBar/>
-  </div>
+	<div id="app">
+		<NavBar/>
+		<ActionsMenu/>
+	</div>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import ActionsMenu from './components/ActionsMenu'
 
 export default {
-  name: 'App',
-  components: {
-    NavBar
-  },
+	name: 'App',
+	components: {
+		NavBar, ActionsMenu
+	},
 }
 </script>
 

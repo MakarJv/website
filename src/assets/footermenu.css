@@ -1,4 +1,4 @@
-footer{
+footer {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -9,9 +9,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
-footer ion-icon{
+
+footer ion-icon {
     color: #fff;
     font-size: 1.7em;
 }

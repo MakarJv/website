@@ -1,23 +1,18 @@
 <template>
-  <footer>
-    <ul>
-      <a href="#">
-        <li>
-          <ion-icon name="settings-outline"></ion-icon>
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          <ion-icon name="help-circle-outline"></ion-icon>
-        </li>
-      </a>
-      <a href="#">
-        <li>
-          <ion-icon name="exit-outline"></ion-icon>
-        </li>
-      </a>
-    </ul>
-  </footer>
+	<footer>
+		<ul>
+			<li><a href="#">
+				<ion-icon name="settings-outline"></ion-icon>
+			</a></li>
+			<li><a href="#">
+				<ion-icon name="help-circle-outline"></ion-icon>
+			</a></li>
+			<li><a href="#">
+				<ion-icon name="exit-outline"></ion-icon>
+			</a></li>
+		
+		</ul>
+	</footer>
 </template>
 
 <script>
