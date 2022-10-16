@@ -18,6 +18,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: solid 1px #000000;
+}
+.darkMode .menuToggle{
+    background: #000000;
 }
 
 .menuToggle::before {
@@ -27,7 +31,9 @@
     color: #2f363e;
     transition: 1.5s;
 }
-
+.darkMode .menuToggle::before{
+    color: #ffffff;
+}
 .menuToggle.active::before {
     transform: rotate(225deg);
 }
@@ -42,6 +48,9 @@
     transition: transform 0.5s, width 0.5s, height 0.5s;
     transition-delay: 1s, 0.5s, 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.darkMode .menu{
+    background: #000000;
 }
 
 .menuToggle.active ~ .menu {
@@ -64,6 +73,9 @@
     transform: rotate(45deg);
     border-radius: 2px;
     transition: 0.5s;
+}
+.darkMode .menu::before{
+    background: #000000;
 }
 
 .menuToggle.active ~ .menu::before {
@@ -91,6 +103,9 @@
     transition: 0.25s;
     transition-delay: calc(0s + var(--i));
 }
+.darkMode .menu ul li{
+    color: #ffffff;
+}
 
 .menuToggle.active ~ .menu ul li {
     opacity: 1;
@@ -103,7 +118,10 @@
     display: block;
     font-size: 2em;
     text-decoration: none;
-    color: #555;
+    color: #000000;
+}
+.darkMode .menu ul li a{
+    color: #ffffff;
 }
 
 .menu ul li:hover a {

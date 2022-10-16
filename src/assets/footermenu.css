@@ -11,6 +11,9 @@ footer {
     justify-content: flex-end;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
+.darkMode footer{
+    background: #000000;
+}
 
 footer ion-icon {
     color: #fff;

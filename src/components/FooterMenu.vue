@@ -1,6 +1,9 @@
 <template>
 	<footer>
 		<ul>
+			<li><a>
+				<DarkModeSlider/>
+			</a></li>
 			<li><a href="#">
 				<ion-icon name="settings-outline"></ion-icon>
 			</a></li>
@@ -10,13 +13,18 @@
 			<li><a href="#">
 				<ion-icon name="exit-outline"></ion-icon>
 			</a></li>
-		
 		</ul>
 	</footer>
 </template>
 
 <script>
-export default {}
+import DarkModeSlider from './DarkModeSlider'
+
+export default {
+	components: {
+		DarkModeSlider
+	}
+}
 </script>
 
 <style lang="scss">
