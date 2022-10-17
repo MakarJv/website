@@ -12,16 +12,17 @@
     position: relative;
     width: 70px;
     height: 70px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 70px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px #000000;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
-.darkMode .menuToggle{
-    background: #000000;
+
+.darkMode .menuToggle {
+    background: #2f363e;
 }
 
 .menuToggle::before {
@@ -31,33 +32,36 @@
     color: #2f363e;
     transition: 1.5s;
 }
-.darkMode .menuToggle::before{
-    color: #ffffff;
-}
+
 .menuToggle.active::before {
     transform: rotate(225deg);
+}
+
+.darkMode .menuToggle::before {
+    color: #ffffff;
 }
 
 .menu {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 70px;
     z-index: -1;
     transition: transform 0.5s, width 0.5s, height 0.5s;
     transition-delay: 1s, 0.5s, 0.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.darkMode .menu{
-    background: #000000;
+
+.darkMode .menu {
+    background: #2f363e;
 }
 
 .menuToggle.active ~ .menu {
     width: 70px;
     height: 240px;
     z-index: 1;
-    transform: translateY(-170px);
+    transform: translateY(-180px);
     transition-delay: 0s, 0.5s, 0.5s;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
@@ -67,15 +71,16 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background: #fff;
+    background: #ffffff;
     left: calc(50% - 8px);
     bottom: 4px;
     transform: rotate(45deg);
     border-radius: 2px;
     transition: 0.5s;
 }
-.darkMode .menu::before{
-    background: #000000;
+
+.darkMode .menu::before {
+    background: #2f363e;
 }
 
 .menuToggle.active ~ .menu::before {
@@ -97,13 +102,14 @@
     list-style: none;
     cursor: pointer;
     opacity: 0;
-    color: white;
-    visibility: visible;
+    color: #2f363e;
+    visibility: hidden;
     transform: translateY(-30px);
     transition: 0.25s;
     transition-delay: calc(0s + var(--i));
 }
-.darkMode .menu ul li{
+
+.darkMode .menu ul li {
     color: #ffffff;
 }
 
@@ -118,12 +124,13 @@
     display: block;
     font-size: 2em;
     text-decoration: none;
-    color: #000000;
+    color: #2f363e;
 }
-.darkMode .menu ul li a{
+
+.darkMode .menu ul li a {
     color: #ffffff;
 }
 
 .menu ul li:hover a {
-    color: #2f363e;
+    color: #c01818;
 }
