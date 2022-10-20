@@ -3,8 +3,8 @@
 		<TheMenu/>
 		<div class="group">
 			<ul class="navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><router-link to="/">Home</router-link></li>
+				<li><a href="#">Login</a></li>
 			</ul>
 		</div>
 	</header>

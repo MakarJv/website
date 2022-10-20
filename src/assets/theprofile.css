@@ -1,0 +1,21 @@
+.profile{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile hr{
+    position: absolute;
+    top: 195px;
+    width: 100%;
+}
+.profile h2{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    color: #000000;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+}
