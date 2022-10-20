@@ -4,7 +4,10 @@
 		<nav class="nav">
 			<label for="nav-toggle" class="nav-toggle" onclick></label>
 			<h2 class="logo">
-				<a href="#">Profile</a>
+				<a href="#">
+          <IconProfile/>
+        </a>
+        <a href="#">Profile</a>
 			</h2>
 			<ul>
 				<li><a href="#">Один</a></li>
@@ -28,10 +31,11 @@
 
 <script>
 import FooterMenu from './FooterMenu'
+import IconProfile from './IconProfile'
 
 export default {
 	components: {
-		FooterMenu
+		FooterMenu, IconProfile
 	}
 }
 </script>

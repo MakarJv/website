@@ -21,12 +21,12 @@ export default {
 		let dark = document.querySelector('#dark')
 		
 		dark.onclick = function () {
-			if (dark.checked != true) {
-				body.classList.remove('darkMode')
-			} else {
-				body.classList.add('darkMode')
-			}
-		}
+      if (dark.checked == true) {
+        body.classList.add('darkMode')
+      } else {
+        body.classList.remove('darkMode')
+      }
+    }
 	}
 }
 </script>
