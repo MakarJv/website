@@ -7,15 +7,19 @@
 }
 .profile hr{
     position: absolute;
-    top: 195px;
+    top: 200px;
     width: 100%;
 }
 .profile h2{
     position: absolute;
-    top: 120px;
+    top: 125px;
     left: 20px;
     color: #000000;
     font-family: "Comic Sans MS", sans-serif;
     font-size: 3em;
     text-transform: uppercase;
+}
+
+.darkMode .profile h2 {
+    color: #ffffff;
 }

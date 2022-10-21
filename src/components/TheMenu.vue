@@ -17,7 +17,6 @@
 				<li><a href="#">Пять</a></li>
 				<li><a href="#">Шесть</a></li>
 				<li><a href="#">Семь</a></li>
-				<li><a href="#">Восемь</a></li>
 			</ul>
 			
 			<FooterMenu/>

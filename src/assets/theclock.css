@@ -81,7 +81,7 @@
     box-shadow: 0 0 20px var(--clr),
     0 0 60px var(--clr);
 }
-@media (min-width: 320px) {
+@media (max-width: 420px) {
     #time {
         padding-top: 30px;
         gap: 20px;
@@ -93,13 +93,5 @@
         right: 0;
         padding-right: 130px;
         transform: translateY(-20px);
-    }
-
-}
-@media (max-width: 420px) {
-    #time {
-        padding: 0;
-        gap: 10px;
-        flex-direction: column;
     }
 }

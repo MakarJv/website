@@ -4,7 +4,7 @@
 		<div class="group">
 			<ul class="navigation">
 				<li><router-link to="/">Home</router-link></li>
-				<li><a href="#">Login</a></li>
+				<li><router-link to="/login">Login</router-link></li>
 			</ul>
 		</div>
 	</header>
