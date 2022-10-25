@@ -1,4 +1,4 @@
-.nav {
+nav {
     width: 350px;
     min-width: 350px;
     height: 100%;
@@ -13,103 +13,47 @@
     transition: left 0.5s;
     background: #fff;
     z-index: 2000;
+    overflow: hidden;
 }
 
-.darkMode .nav {
+.darkMode nav {
     background: #2f363e;
 }
 
-.nav-toggle {
+nav.open {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+}
+
+nav .closeMenu {
     position: absolute;
-    left: 420px;
-    top: auto;
+    right: 0;
+    top: 0;
     padding: 0.5em;
-    background: inherit;
-    color: #000;
+    color: #2f363e;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1;
     z-index: 2001;
     -webkit-transition: color .25s ease-in-out;
     -moz-transition: color .25s ease-in-out;
-    transition: color .25s ease-in-out;
+    transition: 0.5s;
 }
 
-.nav-toggle:after {
-    content: '\2630';
-    text-decoration: none;
+.darkMode nav .closeMenu {
+    color: #fff;
 }
 
-.darkMode .nav-toggle:after {
-    color: white;
+nav .closeMenu:hover {
+    transform: rotate(180deg);
 }
 
-.nav-toggle:hover {
-    color: #000;
-}
-
-[id='nav-toggle'] {
-    position: absolute;
-    display: none;
-}
-
-[id='nav-toggle']:checked ~ .nav > .nav-toggle {
-    left: auto;
-    right: 2px;
-    top: 1em;
-}
-
-[id='nav-toggle']:checked ~ .nav {
-    left: 0;
-    box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.5);
-    overflow-y: auto;
-}
-
-
-[id='nav-toggle']:checked ~ main > article {
-    -webkit-transform: translateX(350px);
-    -moz-transform: translateX(350px);
-    transform: translateX(350px);
-}
-
-[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
-    content: '\2715';
-}
-
-body {
-    -webkit-animation: bugfix infinite 1s;
-}
-
-@-webkit-keyframes bugfix {
-    to {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 420px) {
-    html,
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    html,
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    .nav {
-        width: 100%;
-        box-shadow: none
-    }
-}
-
-.nav h2 {
+nav h2 {
     width: 90%;
     padding: 0;
     margin: 10px 0;
@@ -132,7 +76,7 @@ body {
     -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 
-.nav h2 a {
+nav h2 a {
     font-family: "Comic Sans MS", 'sans-serif';
     color: #2f363e;
     text-decoration: none;
@@ -141,11 +85,11 @@ body {
     font-weight: 500;
 }
 
-.darkMode .nav h2 a {
-    color: white;
+.darkMode nav h2 a {
+    color: #fff;
 }
 
-[id='nav-toggle']:checked ~ .nav h2 {
+nav.open h2 {
     opacity: 1;
     transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -153,15 +97,16 @@ body {
     -webkit-transform: scale(1, 1);
 }
 
-.nav > ul {
-    display: block;
+nav ul {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0;
+    padding-top: 30px;
     list-style: none;
 }
 
-.nav > ul > li {
-    line-height: 2.5;
+nav ul li {
+    line-height: 1.5;
     opacity: 0;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -173,7 +118,7 @@ body {
     transition: opacity .5s .1s, transform .5s .1s;
 }
 
-[id='nav-toggle']:checked ~ .nav > ul > li {
+nav.open ul li {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -181,37 +126,27 @@ body {
     transform: translateX(0);
 }
 
-.nav > ul > li:nth-child(2) {
+nav ul li:nth-child(2) {
     -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
     transition: opacity .5s .2s, transform .5s .2s;
 }
 
-.nav > ul > li:nth-child(3) {
+nav ul li:nth-child(3) {
     -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
     transition: opacity .5s .3s, transform .5s .3s;
 }
 
-.nav > ul > li:nth-child(4) {
+nav ul li:nth-child(4) {
     -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
     transition: opacity .5s .4s, transform .5s .4s;
 }
 
-.nav > ul > li:nth-child(5) {
+nav ul li:nth-child(5) {
     -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
     transition: opacity .5s .5s, transform .5s .5s;
 }
 
-.nav > ul > li:nth-child(6) {
-    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
-    transition: opacity .5s .6s, transform .5s .6s;
-}
-
-.nav > ul > li:nth-child(7) {
-    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
-    transition: opacity .5s .7s, transform .5s .7s;
-}
-
-.nav > ul > li > a {
+nav ul li  a {
     display: inline-block;
     position: relative;
     padding: 0;
@@ -226,13 +161,13 @@ body {
     transition: color .5s ease, padding .5s ease;
 }
 
-.nav > ul > li > a:hover,
-.nav > ul > li > a:focus {
+nav ul li a:hover,
+nav ul li a:focus {
     color: gray;
     padding-left: 15px;
 }
 
-.nav > ul > li > a:before {
+nav ul li a:before {
     content: '';
     display: block;
     position: absolute;
@@ -244,7 +179,7 @@ body {
     transition: width 0s ease;
 }
 
-.nav > ul > li > a:after {
+nav ul li a:after {
     content: '';
     display: block;
     position: absolute;
@@ -257,21 +192,21 @@ body {
     transition: width .5s ease;
 }
 
-.nav > ul > li > a:hover:before {
+nav ul li a:hover:before {
     width: 0;
     background: #000000;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
 
-.nav > ul > li > a:hover:after {
+nav ul li a:hover:after {
     width: 0;
     background: transparent;
     -webkit-transition: width 0s ease;
     transition: width 0s ease;
 }
 
-.mask-content {
+.maskContent {
     display: block;
     position: fixed;
     top: 0;
@@ -288,7 +223,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-[id='nav-toggle']:checked ~ .mask-content {
+.maskContent.open {
     visibility: visible;
     opacity: 1;
     -webkit-transition: opacity .5s, visibility .5s;
