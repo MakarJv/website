@@ -15,6 +15,23 @@ header {
     background: #2f363e;
 }
 
+header .openMenu {
+    position: relative;
+    font-size: 2em;
+    color: #2f363e;
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s;
+}
+
+header.open .openMenu{
+    opacity: 0;
+}
+
+.darkMode header .openMenu {
+    color: #fff;
+}
+
 .group {
     display: flex;
     align-items: center;

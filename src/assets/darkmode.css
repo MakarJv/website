@@ -1,20 +1,29 @@
-.checkbox{
+.checkbox {
     position: relative;
     margin: 0;
     left: 0;
     padding: 0;
     transition: 0.5s;
 }
+
 .checkbox li {
     list-style: none;
     margin: 0;
     padding: 2px;
 }
+
 .checkbox li label {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
+
+.checkbox li label ion-icon {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
 .checkbox li label span {
     margin-right: 15px;
     display: flex;
@@ -25,15 +34,15 @@
     color: #777;
     transition: 0.5s;
 }
-.checkbox li label span ion-icon {
-    margin: 0;
-}
+
 .checkbox li label .action {
     position: relative;
 }
+
 .checkbox li label .action input {
     appearance: none;
 }
+
 .checkbox li label .action i {
     position: relative;
     width: 35px;
@@ -42,9 +51,11 @@
     border-radius: 15px;
     transition: 0.5s;
 }
+
 .checkbox li label .action input:checked ~ i {
     background: #ff2a2a;
 }
+
 .checkbox li label .action i::before {
     content: '';
     position: absolute;
@@ -59,5 +70,5 @@
 }
 
 .checkbox li label .action input:checked ~ i::before {
-    left: calc(100% - 13px);
+    left: calc(100% - 12px);
 }
