@@ -1,7 +1,7 @@
 .navigationActions {
     bottom: 0;
     right: 0;
-    margin: 20px;
+    margin: 10px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
 }
 
 .darkMode .menuToggle {
-    background: #000000;
+    background: #2f363e;
 }
 
 .menuToggle::before {
@@ -54,7 +54,7 @@
 }
 
 .darkMode .menu {
-    background: #000000;
+    background: #2f363e;
 }
 
 .menuToggle.active ~ .menu {
@@ -80,7 +80,7 @@
 }
 
 .darkMode .menu::before {
-    background: #000000;
+    background: #2f363e;
 }
 
 .menuToggle.active ~ .menu::before {
@@ -104,7 +104,7 @@
     opacity: 0;
     color: white;
     visibility: hidden;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
     transition: 0.25s;
     transition-delay: calc(0s + var(--i));
 }
@@ -124,7 +124,7 @@
     display: block;
     font-size: 2em;
     text-decoration: none;
-    color: #000000;
+    color: #2f363e;
 }
 
 .darkMode .menu ul li a {
@@ -132,5 +132,5 @@
 }
 
 .menu ul li:hover a {
-    color: #2f363e;
+    color: #ec3b3b;
 }
