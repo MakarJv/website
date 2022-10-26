@@ -53,6 +53,12 @@ nav .closeMenu:hover {
     transform: rotate(180deg);
 }
 
+@media (max-width: 420px) {
+    nav {
+        width: 100%;
+    }
+}
+
 nav h2 {
     width: 90%;
     padding: 0;
@@ -106,7 +112,7 @@ nav ul {
 }
 
 nav ul li {
-    line-height: 1.5;
+    line-height: 1.6;
     opacity: 0;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -151,8 +157,8 @@ nav ul li  a {
     position: relative;
     padding: 0;
     font-family: 'Comic Sans MS', sans-serif;
-    font-weight: 300;
-    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 1.4em;
     color: #2f363e;
     width: 100%;
     text-decoration: none;

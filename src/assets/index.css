@@ -17,6 +17,7 @@ body {
 .empty-layout {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     box-sizing: border-box;
     font-family: "Comic Sans MS", sans-serif;
 }

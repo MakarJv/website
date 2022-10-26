@@ -6,8 +6,8 @@
 				<a href="#">Profile</a>
 			</h2>
 			<ul>
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Clock</a></li>
+				<li><router-link to="/profile">Profile</router-link></li>
+				<li><router-link to="/clock">Clock</router-link></li>
 				<li><a href="#">Три</a></li>
 				<li><a href="#">Четыре</a></li>
 				<li><a href="#">Пять</a></li>
